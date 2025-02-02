@@ -1,17 +1,30 @@
 # **About the Data**
 ## Nike Global Sales Data Analysis (2024)
-https://www.kaggle.com/datasets/ayushcx/nike-global-sales-data-2024
+https://www.kaggle.com/datasets/ayushcx/nike-global-sales-data-2024  
 The dataset of Nike's global sales for the year 2024, spanning multiple regions, product categories, and price tiers.
 
+## Purpose of the Dataset
+The dataset contains sales data for Nike products across various regions and categories. It includes key details such as sales revenue, price tiers, and the percentage of online sales. The goal of analyzing this dataset is to:
+
+- Understand the sales distribution 
+- Identify sales trends
+- Analyze online vs. offline sales distribution
+
 ## This dataset contains detailed monthly sales information, including:
-Regions: Greater China, Japan, South Korea, India, Southeast Asia, America, Europe.  
-Categories: Footwear, Apparel, and Equipment, with various sub-categories and product lines.  
-Metrics: Units sold, revenue (USD), retail prices, and online sales percentages.
+**Month**: The month in which the sales were recorded.  
+**Region**: The geographic region where the sales occurred (e.g., India, Greater China).  
+**Main_Category**: The broad category of the product (e.g., Footwear, Apparel, Equipment).  
+**Sub_Category**: More specific categorization under the main category (e.g., Tops, Bags, Accessories).  
+**Product_Line**: The product series or specific line (e.g., Tech Fleece, Gym Sack).  
+**Price_Tier**: The pricing strategy (e.g., Budget, Mid-Range, Premium).  
+**Units_Sold**: The total number of units sold.  
+**Revenue_USD**: Total revenue generated from sales in USD.  
+**Online_Sales_Percentage**: The percentage of sales that occurred online.  
+**Retail_Price**: The retail price 
 
 ## Objectives: 
 - Understand the structure of the dataset.
 - Exploratory Data Analysis (EDA) to extract insights and trends (with graph)
-
 
 
 # **Understand the data**  
@@ -555,7 +568,7 @@ To understand which regions contribute the most revenue, we summarize total reve
 **Europe:** \$639,991,140  
 **Southeast Asia:** \$580,116,090  
 
-### **Finding**:  
+### **Insight**:  
 **Greater China** generates the highest revenue, making it the most sales in 2024.  
 **Japan** and **America** follow closely, indicating strong market performance.  
 **Southeast Asia** has the lowest revenue among the regions, suggesting to review the sales strategies in this market.  
@@ -652,7 +665,7 @@ Breaking down revenue by **region and main category** (Footwear, Apparel, Equipm
   - Equipment: \$218,385,140  
   - Footwear: \$207,529,090
     
-### **Findings:**  
+### **Insight:**  
 - **Apparel** is the highest revenue-generating category in most regions.
 - **America** leads in **Apparel** sales (305M), making it a key market for Nike’s clothing category
 - **India** records the highest revenue in **Equipment** sales, indicating strong demand for sports gear
@@ -834,7 +847,7 @@ plt.show()
     
 
 
-### **Findings:**  
+### **Insight:**  
 - **Vapor Cricket** and **Windrunner** are the top-performing product lines, generating the highest revenue, indicating strong customer demand.
 - **Rain Jacket, Gym Sack, and Bags** also contribute significantly to total revenue, demonstrating their popularity in the market.
 - Lower-performing product lines, e.g. **Pegasus, Air Max, Blazer** should be assessed to improve sales.
@@ -877,7 +890,7 @@ plt.show()
     
 
 
-### **Findings:**  
+### **Insight:**  
 - **December** has the highest sales volume, likely due to seasonal shopping and promotions.  
 - Sales drop in **March, April, and August**, indicating a seasonal lull that requires marketing interventions.
 - Summer months **June to August** tend to have moderate sales, suggesting an opportunity for mid-year sales events or back-to-school campaigns to bosst sales 
@@ -923,9 +936,14 @@ plt.show()
     
 
 
-### **Findings:**  
+### **Insight:**  
 
 - **Air Zoom** has the highest offline sales percentage (33.88%), suggesting that customers prefer in-store purchases for this product, possibly due to the need for in-person trials before buying
 - **Bags, Pegasus**, and **KD Series** have the highest online sales percentages, with more than 72% of purchases occurring online, indicating strong digital demand.
 - Products like **Backpacks and Air Max** maintain a balanced online and offline distribution, reflecting steady sales across both channels
 - Footwear models tend to perform better online, while accessories such as Backpacks see a higher proportion of offline sales, likely due to impulse buying behavior in retail stores
+
+
+```python
+
+```

@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Assignment_3</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Assignment_3 0202</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7516,11 +7516,24 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="About-the-Data"><strong>About the Data</strong><a class="anchor-link" href="#About-the-Data">¶</a></h1><h2 id="Nike-Global-Sales-Data-Analysis-(2024)">Nike Global Sales Data Analysis (2024)<a class="anchor-link" href="#Nike-Global-Sales-Data-Analysis-(2024)">¶</a></h2><p><a href="https://www.kaggle.com/datasets/ayushcx/nike-global-sales-data-2024">https://www.kaggle.com/datasets/ayushcx/nike-global-sales-data-2024</a>
+<h1 id="About-the-Data"><strong>About the Data</strong><a class="anchor-link" href="#About-the-Data">¶</a></h1><h2 id="Nike-Global-Sales-Data-Analysis-(2024)">Nike Global Sales Data Analysis (2024)<a class="anchor-link" href="#Nike-Global-Sales-Data-Analysis-(2024)">¶</a></h2><p><a href="https://www.kaggle.com/datasets/ayushcx/nike-global-sales-data-2024">https://www.kaggle.com/datasets/ayushcx/nike-global-sales-data-2024</a><br/>
 The dataset of Nike's global sales for the year 2024, spanning multiple regions, product categories, and price tiers.</p>
-<h2 id="This-dataset-contains-detailed-monthly-sales-information,-including:">This dataset contains detailed monthly sales information, including:<a class="anchor-link" href="#This-dataset-contains-detailed-monthly-sales-information,-including:">¶</a></h2><p>Regions: Greater China, Japan, South Korea, India, Southeast Asia, America, Europe.<br/>
-Categories: Footwear, Apparel, and Equipment, with various sub-categories and product lines.<br/>
-Metrics: Units sold, revenue (USD), retail prices, and online sales percentages.</p>
+<h2 id="Purpose-of-the-Dataset">Purpose of the Dataset<a class="anchor-link" href="#Purpose-of-the-Dataset">¶</a></h2><p>The dataset contains sales data for Nike products across various regions and categories. It includes key details such as sales revenue, price tiers, and the percentage of online sales. The goal of analyzing this dataset is to:</p>
+<ul>
+<li>Understand the sales distribution</li>
+<li>Identify sales trends</li>
+<li>Analyze online vs. offline sales distribution</li>
+</ul>
+<h2 id="This-dataset-contains-detailed-monthly-sales-information,-including:">This dataset contains detailed monthly sales information, including:<a class="anchor-link" href="#This-dataset-contains-detailed-monthly-sales-information,-including:">¶</a></h2><p><strong>Month</strong>: The month in which the sales were recorded.<br/>
+<strong>Region</strong>: The geographic region where the sales occurred (e.g., India, Greater China).<br/>
+<strong>Main_Category</strong>: The broad category of the product (e.g., Footwear, Apparel, Equipment).<br/>
+<strong>Sub_Category</strong>: More specific categorization under the main category (e.g., Tops, Bags, Accessories).<br/>
+<strong>Product_Line</strong>: The product series or specific line (e.g., Tech Fleece, Gym Sack).<br/>
+<strong>Price_Tier</strong>: The pricing strategy (e.g., Budget, Mid-Range, Premium).<br/>
+<strong>Units_Sold</strong>: The total number of units sold.<br/>
+<strong>Revenue_USD</strong>: Total revenue generated from sales in USD.<br/>
+<strong>Online_Sales_Percentage</strong>: The percentage of sales that occurred online.<br/>
+<strong>Retail_Price</strong>: The retail price</p>
 <h2 id="Objectives:">Objectives:<a class="anchor-link" href="#Objectives:">¶</a></h2><ul>
 <li>Understand the structure of the dataset.</li>
 <li>Exploratory Data Analysis (EDA) to extract insights and trends (with graph)</li>
@@ -7551,7 +7564,7 @@ Metrics: Units sold, revenue (USD), retail prices, and online sales percentages.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [53]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">##import liabraries and package</span>
@@ -7570,7 +7583,7 @@ Metrics: Units sold, revenue (USD), retail prices, and online sales percentages.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [54]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">file_path</span> <span class="o">=</span> <span class="s1">'nike_sales_2024.csv'</span>
@@ -7599,7 +7612,7 @@ Metrics: Units sold, revenue (USD), retail prices, and online sales percentages.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [55]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">## Total columns and rows</span>
@@ -7647,7 +7660,7 @@ there are  10 columns
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [56]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Display data types of each column</span>
@@ -7753,7 +7766,7 @@ dtype: object
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [57]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">## Display summary statistics for numeric and categorical columns</span>
@@ -7777,7 +7790,7 @@ dtype: object
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[57]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -7978,7 +7991,7 @@ dtype: object
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [58]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">## Print the summary of missing/null data</span>
@@ -8002,7 +8015,7 @@ dtype: object
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[58]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>Month                      0
 Region                     0
@@ -8035,7 +8048,7 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [59]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">## display the first 10 rows </span>
@@ -8059,7 +8072,7 @@ dtype: int64</pre>
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[59]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8273,7 +8286,7 @@ dtype: int64</pre>
 <strong>South Korea:</strong> $699,019,260<br/>
 <strong>Europe:</strong> $639,991,140<br/>
 <strong>Southeast Asia:</strong> $580,116,090</p>
-<h3 id="Finding:"><strong>Finding</strong>:<a class="anchor-link" href="#Finding:">¶</a></h3><p><strong>Greater China</strong> generates the highest revenue, making it the most sales in 2024.<br/>
+<h3 id="Insight:"><strong>Insight</strong>:<a class="anchor-link" href="#Insight:">¶</a></h3><p><strong>Greater China</strong> generates the highest revenue, making it the most sales in 2024.<br/>
 <strong>Japan</strong> and <strong>America</strong> follow closely, indicating strong market performance.<br/>
 <strong>Southeast Asia</strong> has the lowest revenue among the regions, suggesting to review the sales strategies in this market.</p>
 </div>
@@ -8284,7 +8297,7 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [60]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">## Total Revenue Breakdown by Region (in list)</span>
@@ -8309,7 +8322,7 @@ dtype: int64</pre>
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[60]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>Region
 Greater China     804543630
@@ -8329,7 +8342,7 @@ Name: Revenue_USD, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [61]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">## Total Revenue Breakdown by Region (in bar chart)</span>
@@ -8423,7 +8436,7 @@ Name: Revenue_USD, dtype: int64</pre>
 </ul>
 </li>
 </ul>
-<h3 id="Findings:"><strong>Findings:</strong><a class="anchor-link" href="#Findings:">¶</a></h3><ul>
+<h3 id="Insight:"><strong>Insight:</strong><a class="anchor-link" href="#Insight:">¶</a></h3><ul>
 <li><strong>Apparel</strong> is the highest revenue-generating category in most regions.</li>
 <li><strong>America</strong> leads in <strong>Apparel</strong> sales (305M), making it a key market for Nike’s clothing category</li>
 <li><strong>India</strong> records the highest revenue in <strong>Equipment</strong> sales, indicating strong demand for sports gear</li>
@@ -8437,7 +8450,7 @@ Name: Revenue_USD, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [62]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">## Total Revenue Breakdown by Region &amp; main_category (in list)</span>
@@ -8465,7 +8478,7 @@ Name: Revenue_USD, dtype: int64</pre>
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[62]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8610,7 +8623,7 @@ Name: Revenue_USD, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [63]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">##Revenue Contribution by Product Line (Bar Chart using plt.bar)</span>
@@ -8656,7 +8669,7 @@ Name: Revenue_USD, dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Findings:"><strong>Findings:</strong><a class="anchor-link" href="#Findings:">¶</a></h3><ul>
+<h3 id="Insight:"><strong>Insight:</strong><a class="anchor-link" href="#Insight:">¶</a></h3><ul>
 <li><strong>Vapor Cricket</strong> and <strong>Windrunner</strong> are the top-performing product lines, generating the highest revenue, indicating strong customer demand.</li>
 <li><strong>Rain Jacket, Gym Sack, and Bags</strong> also contribute significantly to total revenue, demonstrating their popularity in the market.</li>
 <li>Lower-performing product lines, e.g. <strong>Pegasus, Air Max, Blazer</strong> should be assessed to improve sales.</li>
@@ -8681,7 +8694,7 @@ Name: Revenue_USD, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [64]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">## Monthly Sales Trend (histogram)</span>
@@ -8730,7 +8743,7 @@ Name: Revenue_USD, dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Findings:"><strong>Findings:</strong><a class="anchor-link" href="#Findings:">¶</a></h3><ul>
+<h3 id="Insight:"><strong>Insight:</strong><a class="anchor-link" href="#Insight:">¶</a></h3><ul>
 <li><strong>December</strong> has the highest sales volume, likely due to seasonal shopping and promotions.</li>
 <li>Sales drop in <strong>March, April, and August</strong>, indicating a seasonal lull that requires marketing interventions.</li>
 <li>Summer months <strong>June to August</strong> tend to have moderate sales, suggesting an opportunity for mid-year sales events or back-to-school campaigns to bosst sales</li>
@@ -8755,7 +8768,7 @@ Name: Revenue_USD, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [65]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">## online vs offline Sales by Product line (Stacked Bar Chart)</span>
@@ -8812,12 +8825,26 @@ Name: Revenue_USD, dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Findings:"><strong>Findings:</strong><a class="anchor-link" href="#Findings:">¶</a></h3><ul>
+<h3 id="Insight:"><strong>Insight:</strong><a class="anchor-link" href="#Insight:">¶</a></h3><ul>
 <li><strong>Air Zoom</strong> has the highest offline sales percentage (33.88%), suggesting that customers prefer in-store purchases for this product, possibly due to the need for in-person trials before buying</li>
 <li><strong>Bags, Pegasus</strong>, and <strong>KD Series</strong> have the highest online sales percentages, with more than 72% of purchases occurring online, indicating strong digital demand.</li>
 <li>Products like <strong>Backpacks and Air Max</strong> maintain a balanced online and offline distribution, reflecting steady sales across both channels</li>
 <li>Footwear models tend to perform better online, while accessories such as Backpacks see a higher proportion of offline sales, likely due to impulse buying behavior in retail stores</li>
 </ul>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=3c321b23-5590-4267-b4f3-1508ed977de5">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
 </div>
 </div>
 </div>
