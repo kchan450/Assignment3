@@ -1,4 +1,4 @@
-Assignment3
+# Assignment3
 Assignment 3: a baby project
 
 # About the data: Nike Global Sales Data Analysis (2024)
