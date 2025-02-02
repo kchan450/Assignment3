@@ -1,8 +1,7 @@
 # Assignment3
 Assignment 3: a baby project
 
-# About the data: Nike Global Sales Data Analysis (2024)
->>>>>>> 1d08ef5a9f271a319af6a7c97d42e897a9519a16
+## About the data: Nike Global Sales Data Analysis (2024)
 
 ## 📌 Data Source
 This project analyzes Nike's global sales data for 2024. The dataset is sourced from Kaggle:
