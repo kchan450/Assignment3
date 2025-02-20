@@ -1,6 +1,6 @@
 **Assignment 5: Toddler Project**
 
-file is located at **Script** folder : script/Assignment5_0220.ipynb
+**Python file** is located at **Script** folder : script/Assignment5_0220.ipynb
 
 Objective
 In this assignment, two datasets are merged to create a comprehensive table that includes both sales data and unit costs.
