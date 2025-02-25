@@ -13,3 +13,11 @@ Nike Sales Dataset (Nike_sales_2024) – Sourced from Kaggle, this dataset conta
 
 By joining these datasets, a more detailed sales table that includes sales figures as well as its related unit costs by each product line, enabling a deeper analysis of profit or pricing strategy for each country/month. 
 In addition, it can help to identify any missing records in the Nike_unitCost Dataset for further update.
+
+**Tasks**
+1. Unerstand the data\n
+2. Merge Data (left join)\n
+3. Add \"profit\" column in dataset\n
+4. Data visualization\n
+5. Identify Missing values in Cost Dataset\n
+6. Export Missing Records for Further Review\n
