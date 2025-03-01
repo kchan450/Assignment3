@@ -96,7 +96,7 @@ Initially, an INNER JOIN was used to merge the sales and cost datasets. However,
 
 Another challenge was considering a RIGHT JOIN, which prioritized cost data over sales records. However, since the focus of the analysis was on sales trends and profitability, this approach was not useful. The LEFT JOIN ultimately provided the best balance, ensuring that all sales data remained while incorporating available cost information.
 
-## **Final Thoughts**
-By leveraging exploratory analysis, data cleaning, and proper data integration techniques, this project successfully examined Nike sales trends while ensuring data consistency. The use of **LEFT JOIN** allowed for comprehensive profit analysis without losing critical sales information.
+## **Conclusion**
+This project demonstrated data cleaning, data analysis, data visualization and data merge techniques to assess Nike’s sales performance and profitability. This project provided valuable hands-on experience in data processing, integration, and interpretation to extract meaningful insights for Nike Sales dataset.
 
 
