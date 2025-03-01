@@ -1,11 +1,23 @@
-# Assignment3
-Assignment 3: a baby project
+**Assignment 5: Toddler Project**
 
-## About the data: Nike Global Sales Data Analysis (2024)
+**Python file** is located at **Script** folder : script/Assignment5_0220.ipynb
 
-## 📌 Data Source
-This project analyzes Nike's global sales data for 2024. The dataset is sourced from Kaggle:
+**Objective**
 
-(https://www.kaggle.com/datasets/ayushcx/nike-global-sales-data-2024)
+In this assignment, two datasets are merged to create a comprehensive table that includes both sales data and unit costs.
 
-The dataset includes sales figures across different regions and product categories, providing insights into Nike's performance.
+**Dataset 1:** (It is the one copied from Assignment 3)
+Nike Sales Dataset (Nike_sales_2024) – Sourced from Kaggle, this dataset contains Nike's global sales data for 2024. (https://www.kaggle.com/datasets/ayushcx/nike-global-sales-data-2024)
+
+**Dataset 2:** Nike Unit Cost Dataset (Nike_unitcost) – it is generated from [www.mockaroo.com], providing unit cost for different Nike products.
+
+By joining these datasets, a more detailed sales table that includes sales figures as well as its related unit costs by each product line, enabling a deeper analysis of profit or pricing strategy for each country/month. 
+In addition, it can help to identify any missing records in the Nike_unitCost Dataset for further update.
+
+**Tasks**
+1. Unerstand the data\n
+2. Merge Data (left join)\n
+3. Add \"profit\" column in dataset\n
+4. Data visualization\n
+5. Identify Missing values in Cost Dataset\n
+6. Export Missing Records for Further Review\n
